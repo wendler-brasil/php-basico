@@ -1,15 +1,15 @@
 <?php
-// Receber os dados do formulário
+
 $peso = (float) str_replace(",", ".", $_GET["peso"] ?? "0");
 $altura = (float) str_replace(",", ".", $_GET["altura"] ?? "0");
 
-// Inicializar variáveis
+
 $erro = "";
 $imc = 0;
 $imcFormatado = "";
 $classe = "";
 
-// Verificar se os valores são válidos
+
 if ($peso <= 0 || $altura <= 0) {
 
     $erro = "Informe peso e altura maiores que zero.";

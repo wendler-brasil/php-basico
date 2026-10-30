@@ -1,22 +1,22 @@
 
 <?php
-// Definir o fuso horário
+
 date_default_timezone_set("America/Sao_Paulo");
 
-// Obter data e hora do servidor
+
 $data = date("d/m/Y");
 $hora = date("H:i:s");
 
-// Criar mensagem usando concatenação
+
 $mensagem = "Hoje é " . $data . " e agora são " . $hora . ".";
 
-// Mensagem usando interpolação
+
 $mensagem2 = "Hoje é $data e agora são $hora.";
 
-// Pegar a hora atual como número inteiro
+
 $horaAtual = (int) date("H");
 
-// Definir saudação conforme o horário
+
 if ($horaAtual < 12) {
     $saudacao = "Bom dia";
 } elseif ($horaAtual < 18) {
@@ -25,7 +25,7 @@ if ($horaAtual < 12) {
     $saudacao = "Boa noite";
 }
 
-// Dia da semana em português
+
 $diaSemana = date("w");
 
 switch ($diaSemana) {
